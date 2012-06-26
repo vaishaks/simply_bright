@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <!-- DEFAULT VARIABLES -->
+    <meta name="color:Background" content="#222222" />
+    <meta name="image:Background" content"" />
+    <meta name="color:Text" content="#333333"/>
+    <meta name="font:Body" content="Baskerville"/>
+    <meta name="font:Title" content="Baskerville"/>
+    <meta name="image:Header" content="" />
+    <meta name="image:Background" content="" />
+    <meta name="image:Favicon" content="" />
+    <meta name="text:Twitter Name" content="" />
+    <meta name="text:Facebook Profile URL" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title id="title">
+        {Title}
+    </title>
+    
+    {block:Description}
+        <meta name="description" content="{MetaDescription}" />
+    {/block:Description}
+    
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Merienda+One|Quantico' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+    
+    body {
+        background: url('http://static.tumblr.com/lp32jab/hj6lxe2wh/colourlovers.com-flow2__2_.png') top left     fixed repeat;
+        margin: 0;
+        padding: 0;
+        font-family: {font:Body};
+    }
+    
+    #wrapper {
+        width: 845px;
+        margin: 0 auto;
+    }
+        
+    .title {
+        margin: 30px;
+        color: #212429;
+        width: 345px;
+        background: #FCFBF9;
+        font-size: 65px;
+        font-weight: normal;
+        font-family: 'Fredericka the Great', cursive;               
+        text-shadow: 3px 3px 5px rgba(0,0,0, 0.5);
+        text-align: center;   
+        text-decoration: none;
+        letter-spacing: 1px;
+        margin-left: 140px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    .side_title {
+        background: #C4DFF0;
+        font-family: 'Fredericka the Great', cursive;               
+        text-shadow: 3px 3px 5px rgba(0,0,0, 0.5);
+        text-decoration: none;
+        font-size: 20px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    .content {
+        position: absolute;
+        top: 160px;
+        left: 250px;
+        padding: 10px;
+        width: 680px;
+        float: left;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        left: 1177px;
+        width: 185px;
+        height: 230px;
+        float: right;
+        background-color: #fff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    .box {
+        margin-left: 50px;
+        max-width: 580px;
+        background-color: #FCFBF9;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    .posts {
+        font-family: 'Helvetica';
+        font-size: 17px;
+        padding: 10px;
+    }
+    
+     blockquote {
+        font-size: 17px;
+        background-color: #F0DFC5;
+        padding: 5px;
+        border-left: 5px solid #EEAE43;
+        margin: 5px;
+    }
+    
+   a.text_title {
+        font-family: 'Merienda One';
+        background-color: #EEAE43;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    a.photo_title {
+        font-family: 'Merienda One';
+        background-color: #E84F4B;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    a.quote_title {
+        font-family: 'Merienda One';
+        background-color: #40D1DC;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    a.url_title {
+        font-family: 'Merienda One';
+        background-color: #821079;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    a.chat_title {
+        font-family: 'Merienda One';
+        background-color: #67992F;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+     a.audio_title {
+        font-family: 'Merienda One';
+        background-color: #7F8082;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    a.video_title {
+        font-family: 'Merienda One';
+        background-color: #FA416A;
+        font-size: 29px;
+        color: #FCFBF9;
+        text-decoration: none;
+        padding: 7px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 4px 4px 2px #ABB0B5;
+    }
+    
+    .posts a {
+        color: #2EB3FE;
+        font-weight: bold;
+    }
+    
+    .posts a:hover {
+        color: #FF038A;
+    }
+       
+    .posts a:visited {
+        color: #6B4868;
+    }
+    
+    .quote {
+        font-family: Quantico;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .source {
+        height: 30px;
+        width: 580px;
+        background-color: #B2BADD;
+        font-family: Tahoma;
+        font-weight: bold;
+    }
+    
+    .source a {
+        color: #2EB3FE;
+        font-weight: bold;
+    }
+    
+    .source a:hover {
+        color: #FF038A;
+    }
+       
+    .source a:visited {
+        color: #6B4868;
+    }
+    
+    .box ul {
+         padding: 0px;
+        margin: 0px;
+    }
+    
+    .chat li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    
+    .chat li.odd {
+        background-color: #754474;
+        margin-bottom: 1px;
+        color: #FCD4F9;
+    }
+
+    .chat li.even {
+        background-color: #FCD4F9;
+        margin-bottom: 1px;
+        color: #754474;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+    
+    .twitter {
+        position: relative;
+        top: 25px;
+        left: 20px;
+    }
+    
+    .facebook {
+        position: relative;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .rss {
+        position: relative;
+        top: 25px;
+        left: 60px;
+    }
+    
+    </style>
+   
+    <style type="text/css">{CustomCSS}</style>
+    
+</head>
+<body>
+<!--Credit for background pattern goes to  marisaboia & Frazer-->
+    <div id="wrapper">
+        <div class="title">
+            <a href="/">
+                {block:IfHeaderImage}
+                <img src="{image:Header}" />
+                {/block:IfHeaderImage}
+                {block:IfNotHeaderImage}
+                {Title}
+                {/block:IfNotHeaderImage}
+            </a>
+        </div>
+        <div class="content">
+            {block:Posts}
+            
+                {block:Text}
+                <div class="box">
+                {block:Title}
+                <h3><a class="text_title" href="{Permalink}">{Title}</a></h3>
+                {/block:Title}
+                <div class="posts">
+                {Body}
+                </div>
+                </div>
+                {/block:Text}
+                
+                {block:Photo}
+                <div class="box">
+                <h3><a class="photo_title" href="{Permalink}">Photo</a></h3>
+                {LinkOpenTag}
+                <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+                {LinkCloseTag}
+                <div class="posts">
+                {block:Caption}
+                {Caption}
+                {/block:Caption}
+                </div>
+                </div>
+                {/block:Photo}
+                
+                {block:Quote}
+                <div class="box">
+                <h3><a class="quote_title" href="{Permalink}">Quote</a></h3>
+                <div class="quote">
+                "{Quote}"
+                </div>
+                <br>
+                {block:Source}
+                <div class="source">
+                - {Source}
+                </div>
+                {/block:Source}
+                </div>
+                {/block:Quote}
+                
+                {block:Link}
+                <div class="box">
+                <h3><a class="url_title" href="{URL}" target="_blank">{Name}</a></h3>
+                {block:Description}
+                <div class="posts">
+                {Description}
+                </div>
+                {/block:Description}
+                </div>
+                {/block:Link}
+                
+                {block:Chat}
+                <div class="box">
+                <h3><a class="chat_title" href="{permalink}">Chat </a></h3>
+                <ul class="chat">
+                {block:Lines}
+                <li class="{Alt} user_{Usernumber}">
+                {block:Label}
+                <span class="label">{Label}</span>
+                {/block:Label}
+                {Line}
+                </li>
+                {/block:Lines}
+                </ul>
+                </div>
+                {/block:Chat}
+                
+                {block:Video}
+                <div class="box">
+                <h3><a class="video_title" href="{permalink}">Video</a></h3>
+                {Video-500}
+                {block:Caption}
+                {Caption}
+                {/block:Caption}
+                </div>
+                {/block:Video}
+                
+                {block:Audio}
+                <div class="box">
+                <h3><a class="audio_title" href="{permalink}">Audio</a></h3>
+                {block:AlbumArt}
+                <img src={AlbumArtURL} />
+                {/block:AlbumArt}
+                {AudioPlayerGrey}
+                {block:Caption}
+                <div class="posts">
+                {Caption}
+                </div>
+                {/block:Caption}
+                </div>
+                {/block:Audio}
+                
+            {/block:Posts}
+        </div>
+        <div class="sidebar">
+        <center>
+        <a href="/"><img src="{PortraitURL-128}" />
+        <br>
+        <div class="side_title">
+        {Title}
+        </div>
+        </a>
+        </center>
+        <a href="http://www.twitter.com/{text:Twitter Name}">
+        <img src="http://static.tumblr.com/lp32jab/28Plxdvwz/twitter_32.png" class="twitter">
+        </a>
+        <a href="{text:Facebook Profile URL}">
+        <img src="http://static.tumblr.com/lp32jab/GqLlxdwel/facebook_32.png" class="facebook">
+        </a>
+        <a href="{RSS}">
+        <img src="http://static.tumblr.com/lp32jab/hM3lxe1bj/rss_watercolor.png" class="rss">
+        </a>
+        </div>
+    </div>  
+</body>
+</html>
